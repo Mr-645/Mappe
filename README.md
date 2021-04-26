@@ -31,10 +31,10 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">Mappe</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    SOP document management software
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
     <br />
@@ -51,7 +51,7 @@
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
-  <summary>Project - Mappe</summary>
+  <summary>Table of Contents</summary>
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
