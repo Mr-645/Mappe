@@ -22,6 +22,27 @@ class Window(QMainWindow, Ui_MainWindow):
 
     def connectButtons(self):
         self.actionExit.triggered.connect(self.close)
+    
+    def fill_table_json(self):
+        with open(self.main_table_path, 'r') as table_file_read:
+            self.data = json.load(table_file_read)
+        
+        the_keys = list(self.data['document_list_and_data'][0].keys())
+        the_list = self.data['document_list_and_data']
+
+        self.tableWidget.setColumnCount(len(the_keys))
+        self.tableWidget.setHorizontalHeaderLabels(the_keys)
+        self.tableWidget.setRowCount(len(the_list))
+
+        print(f"The type is: {type(the_keys)}, and the content is: {the_keys}")
+
+        for i in range(len(the_list)): #row count
+            for j in range(len(the_keys)): #column count
+                cell_val = the_list[i][the_keys[j]]
+                self.tableWidget.setItem(i, j, QTableWidgetItem(cell_val))
+
+        self.tableWidget.resizeColumnsToContents()
+        self.tableWidget.resizeRowsToContents()
 
     def openfile(self):
         try:
