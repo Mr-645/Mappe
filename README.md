@@ -28,7 +28,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/Mr-645/Mappe">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="icons/Mappe_icon.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Mappe</h3>
@@ -36,11 +36,6 @@
   <p align="center">
     SOP document management software
     <br />
-    <a href="https://github.com/Mr-645/Mappe"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/Mr-645/Mappe">View Demo</a>
-    ·
     <a href="https://github.com/Mr-645/Mappe/issues">Report Bug</a>
     ·
     <a href="https://github.com/Mr-645/Mappe/issues">Request Feature</a>
@@ -81,17 +76,14 @@
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
+<i>There's not a great deal I can reveal about this project, but here's a bit of what I can reveal</i>
 
-There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+These are the remains of an abandoned software project that was ~90% complete before it was decommissioned.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should element DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have have contributed to expanding this template!
-
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
+Its primary functions are:
+* Create a new SOP, and subsequent training documents from a standardised template
+* Manage the documents by accounting for them and their status using an SQL database
+* Easy to use and install GUI interface
 
 ### Built With
 
