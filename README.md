@@ -208,7 +208,7 @@ Project Link: [https://github.com/your_username/repo_name](https://github.com/yo
 [issues-shield]: https://img.shields.io/github/issues/Mr-645/Mappe.svg?style=for-the-badge
 [issues-url]: https://github.com/Mr-645/Mappe/issues
 [license-shield]: https://img.shields.io/github/license/Mr-645/Mappe.svg?style=for-the-badge
-[license-url]: https://github.com/Mr-645/Mappe/blob/master/LICENSE.txt
+[license-url]: https://github.com/Mr-645/Mappe/blob/master/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
 [product-screenshot]: images/screenshot.png
