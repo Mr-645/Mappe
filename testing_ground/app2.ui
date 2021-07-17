@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>919</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Mappe</string>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>24</width>
+    <height>24</height>
+   </size>
+  </property>
+  <property name="toolButtonStyle">
+   <enum>Qt::ToolButtonTextUnderIcon</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTableWidget" name="tableWidget">
+      <property name="contextMenuPolicy">
+       <enum>Qt::ActionsContextMenu</enum>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::AdjustIgnored</enum>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::SelectedClicked</set>
+      </property>
+      <property name="showDropIndicator" stdset="0">
+       <bool>false</bool>
+      </property>
+      <property name="dragDropOverwriteMode">
+       <bool>false</bool>
+      </property>
+      <property name="alternatingRowColors">
+       <bool>true</bool>
+      </property>
+      <property name="selectionBehavior">
+       <enum>QAbstractItemView::SelectRows</enum>
+      </property>
+      <property name="textElideMode">
+       <enum>Qt::ElideLeft</enum>
+      </property>
+      <property name="sortingEnabled">
+       <bool>false</bool>
+      </property>
+      <property name="cornerButtonEnabled">
+       <bool>false</bool>
+      </property>
+      <attribute name="horizontalHeaderCascadingSectionResizes">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="horizontalHeaderMinimumSectionSize">
+       <number>10</number>
+      </attribute>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>30</number>
+      </attribute>
+      <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="horizontalHeaderStretchLastSection">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="verticalHeaderMinimumSectionSize">
+       <number>10</number>
+      </attribute>
+      <attribute name="verticalHeaderDefaultSectionSize">
+       <number>30</number>
+      </attribute>
+      <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="verticalHeaderStretchLastSection">
+       <bool>false</bool>
+      </attribute>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>919</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionCreate_new_SOP"/>
+    <addaction name="actionCreate_TQR_and_PC"/>
+    <addaction name="separator"/>
+    <addaction name="actionRescan_for_main_table"/>
+    <addaction name="actionRescan_update_details_of_selected_SOPs_in_table"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuTools">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionRefresh_main_table"/>
+    <addaction name="separator"/>
+    <addaction name="actionSystem_parameters"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionInstructions"/>
+    <addaction name="separator"/>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuTools"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar">
+   <property name="autoFillBackground">
+    <bool>true</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-color: rgb(0, 0, 0);</string>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonTextUnderIcon</enum>
+   </property>
+   <property name="floatable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionRescan_update_details_of_selected_SOPs_in_table"/>
+   <addaction name="actionCreate_TQR_and_PC"/>
+   <addaction name="separator"/>
+  </widget>
+  <action name="actionInstructions">
+   <property name="icon">
+    <iconset>
+     <normaloff>../qt-designer-python/sample_editor/ui/resources/edit-paste.png</normaloff>../qt-designer-python/sample_editor/ui/resources/edit-paste.png</iconset>
+   </property>
+   <property name="text">
+    <string>Instructions</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="icon">
+    <iconset>
+     <normaloff>../qt-designer-python/sample_editor/ui/resources/help-content.png</normaloff>../qt-designer-python/sample_editor/ui/resources/help-content.png</iconset>
+   </property>
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset>
+     <normaloff>../qt-designer-python/sample_editor/ui/resources/file-exit.png</normaloff>../qt-designer-python/sample_editor/ui/resources/file-exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionSystem_parameters">
+   <property name="icon">
+    <iconset>
+     <normaloff>../qt-designer-python/sample_editor/ui/resources/file-save.png</normaloff>../qt-designer-python/sample_editor/ui/resources/file-save.png</iconset>
+   </property>
+   <property name="text">
+    <string>System parameters</string>
+   </property>
+  </action>
+  <action name="actionRescan_for_main_table">
+   <property name="icon">
+    <iconset>
+     <normaloff>../icons/rescan.png</normaloff>../icons/rescan.png</iconset>
+   </property>
+   <property name="text">
+    <string>Re-scan folders and update main table</string>
+   </property>
+  </action>
+  <action name="actionCreate_new_SOP">
+   <property name="icon">
+    <iconset>
+     <normaloff>../qt-designer-python/sample_editor/ui/resources/file-new.png</normaloff>../qt-designer-python/sample_editor/ui/resources/file-new.png</iconset>
+   </property>
+   <property name="text">
+    <string>Create new SOP</string>
+   </property>
+  </action>
+  <action name="actionCreate_TQR_and_PC">
+   <property name="icon">
+    <iconset>
+     <normaloff>../icons/Mappe_icon_old.png</normaloff>../icons/Mappe_icon_old.png</iconset>
+   </property>
+   <property name="text">
+    <string>Create Task Qualification Report &amp;&amp; Procedure Checklist</string>
+   </property>
+   <property name="iconText">
+    <string>Create TQR(s) &amp;&amp; PC(s) of selected SOPs</string>
+   </property>
+   <property name="toolTip">
+    <string>Create task qualification report
+ and procedure checklist</string>
+   </property>
+  </action>
+  <action name="actionRefresh_main_table">
+   <property name="icon">
+    <iconset>
+     <normaloff>../icons/refresh.png</normaloff>../icons/refresh.png</iconset>
+   </property>
+   <property name="text">
+    <string>Refresh main table</string>
+   </property>
+  </action>
+  <action name="actionRescan_update_details_of_selected_SOPs_in_table">
+   <property name="icon">
+    <iconset>
+     <normaloff>../icons/search.png</normaloff>../icons/search.png</iconset>
+   </property>
+   <property name="text">
+    <string>Rescan-update details of selected SOPs in table</string>
+   </property>
+   <property name="iconText">
+    <string>Rescan-update details of selected SOPs</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
